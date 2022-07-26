@@ -1,5 +1,5 @@
 import React from "react";
-export default function MainComponent(){
+export default function AboutMeComponent(){
     return(
         <></>
     )

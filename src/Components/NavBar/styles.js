@@ -12,6 +12,7 @@ export const MenuButton = styled.button`
     height: 7vh;
     border: none;
     background: none;
+    cursor: pointer;
     @media (min-width: 1279px){
         width: 5vw;
         svg{

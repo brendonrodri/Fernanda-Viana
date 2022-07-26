@@ -24,9 +24,9 @@ const Menu = ()=>{
     return(
         <S.MenuList>
             <S.MenuListItem>Início</S.MenuListItem>
+            <S.MenuListItem>Portfólio</S.MenuListItem>
             <S.MenuListItem>Loja</S.MenuListItem>
             <S.MenuListItem>Dúvidas Comuns</S.MenuListItem>
-            <S.MenuListItem>Portfólio</S.MenuListItem>
             <S.MenuListItem>Sobre Mim</S.MenuListItem>
             <S.MenuListItem>Contatos</S.MenuListItem>
         </S.MenuList>
