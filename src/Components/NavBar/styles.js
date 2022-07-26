@@ -12,6 +12,13 @@ export const MenuButton = styled.button`
     height: 7vh;
     border: none;
     background: none;
+    @media (min-width: 1279px){
+        width: 5vw;
+        svg{
+            position: relative;
+            right: 37px;
+        }
+    }
     svg{
         width: 10vw;
         height: 5vh;
@@ -19,10 +26,10 @@ export const MenuButton = styled.button`
 `;
 export const menuanimation = keyframes`
     from{
-        top: 0px;
+        top: -20px;
     }
     to{
-        top: 10%;  
+        top: 8%;  
     }
 `
 export const MenuList = styled.ul`
@@ -31,9 +38,21 @@ export const MenuList = styled.ul`
     background: #822525;
     position: absolute;
     top: 10%;
-    animation: ${menuanimation} 240ms linear;
+    animation: ${menuanimation} 310ms linear;
+    @media (min-width: 1279px){
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 17%;
+        top: -1%;
+    }
 `;
 export const MenuListItem = styled.li`
+@media (min-width: 1279px){
+        font-size: 1.2em;
+        margin-left: 10px;
+    }
     list-style: none;
     font-weight: bold;
     padding: 7px;
