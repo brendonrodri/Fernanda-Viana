@@ -3,9 +3,14 @@ export const NavBar = styled.nav`
     width: 100%;
     height: 10vh;
     display: flex;
+    background: #821616;
     align-items: center;
-    background: #822525;
     font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    z-index: 1;
+    @media (min-width: 1279px){
+        background: transparent;
+    }
 `;
 export const MenuButton = styled.button`
     width: 15vw;
@@ -36,17 +41,19 @@ export const menuanimation = keyframes`
 export const MenuList = styled.ul`
     width: 100%;
     padding: 10px 5px;
-    background: #822525;
+    background: #821616;
     position: absolute;
-    top: 10%;
-    animation: ${menuanimation} 310ms linear;
+    top: 80%;
+    animation: ${menuanimation} 310ms ease;
     @media (min-width: 1279px){
-        width: 60%;
+        width: 100vw;
+        height: 12vh;
         display: flex;
         justify-content: center;
+        align-items: center;
         position: relative;
-        left: 17%;
-        top: -1%;
+        left: 0%;
+        top: 0;
     }
 `;
 export const MenuListItem = styled.li`
