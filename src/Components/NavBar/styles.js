@@ -57,12 +57,17 @@ export const MenuList = styled.ul`
     }
 `;
 export const MenuListItem = styled.li`
-@media (min-width: 1279px){
-        font-size: 1.2em;
-        margin-left: 10px;
-    }
     list-style: none;
     font-weight: bold;
     padding: 7px;
     color: rgba(255,255,255, 0.8);
+    
+    a{
+        text-decoration: none;
+        color: rgba(255,255,255, 0.8);
+    }
+    @media (min-width: 1279px){
+        font-size: 1.2em;
+        margin-left: 10px;
+    }
 `;

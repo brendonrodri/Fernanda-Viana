@@ -5,7 +5,7 @@ export const Header = styled.header`
     display: flex;
     background: #d8cba3;
     position: relative;
-    top: 8%;
+    top: 4.5%;
 `
 export const HeaderPictureBox = styled.div`
     width: 35%;

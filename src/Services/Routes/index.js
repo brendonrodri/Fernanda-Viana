@@ -10,7 +10,7 @@ export default function RoutesComponent(){
             <Route path="/" element={<MainComponent />}/>
             <Route path="/portfolio" element={<PortComponent/>}/>
             <Route path="/sobre-mim" element={<AboutMeComponent/>}/>
-            <Route path="/duvidas-frequentes" element={<CommonQuestionsComponent/>}/>
+            <Route path="/duvidas-comuns" element={<CommonQuestionsComponent/>}/>
             <Route path="/contatos" element={<ContactsComponent/>}/>
         </Routes>
     )

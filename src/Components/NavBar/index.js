@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 import {FaBars} from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import * as S from "./styles";
@@ -23,12 +24,12 @@ export default function NavBarComponent(){
 const Menu = ()=>{
     return(
         <S.MenuList>
-            <S.MenuListItem>Início</S.MenuListItem>
+            <S.MenuListItem><Link to="/">Início</Link></S.MenuListItem>
             <S.MenuListItem>Portfólio</S.MenuListItem>
             <S.MenuListItem>Loja</S.MenuListItem>
-            <S.MenuListItem>Dúvidas Comuns</S.MenuListItem>
+            <S.MenuListItem><Link to="/duvidas-comuns">Dúvidas Comuns</Link></S.MenuListItem>
             <S.MenuListItem>Sobre Mim</S.MenuListItem>
-            <S.MenuListItem>Contatos</S.MenuListItem>
+            <S.MenuListItem><Link to ="/contatos">Contatos</Link></S.MenuListItem>
         </S.MenuList>
     )
 }
